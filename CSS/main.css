@@ -7,68 +7,72 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 800px;
-  margin-top: 25px;
 }
 
-header > img {
+header {
+  margin-top: 25px;
+}
+footer {
+  background-color: lightgray;
+}
+
+.logo {
   height: 40px;
 }
 
-nav {
+.main-nav {
   display: flex;
   gap: 20px;
 }
 
-nav > a {
+.main-nav > .link {
   color: #333;
   text-decoration: none;
   font-size: 20px;
 }
-nav > a:hover {
+.main-nav > .link:hover {
   color: red;
   text-decoration: underline;
 }
-
-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 800px;
+.main-nav > .link.active {
+  font-weight: bold;
+  color: #000;
+  text-decoration: underline;
 }
 
-main > div {
+.left-column {
   width: 40%;
 }
 
-h1 {
+.main-title {
   margin: 0;
   font-size: 50px;
   font-weight: normal;
 }
-div > p {
+.sub-title {
   margin: 0;
   margin-bottom: 40px;
-}
-div > p:first-of-type {
   font-size: 50px;
   font-weight: bold;
 }
-div > p:last-of-type {
+.description {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 20px;
 }
 
-main > div > div {
+.btn-group {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-main a {
+.btn {
   background-color: #554485;
   color: #fff;
   padding: 16px;
@@ -82,33 +86,29 @@ main a {
   border-radius: 30px;
   border: 4px solid #554485;
 }
-main a:last-child {
+.btn:last-child {
   background-color: #fff;
   color: #554485;
 }
-main a:hover {
+.btn:hover {
   background-color: #fff;
   color: #554485;
   cursor: pointer;
 }
-main a:last-child:hover {
+.btn:last-child:hover {
   background-color: #554485;
   color: #fff;
 }
 
-main > img {
+.main-img {
   width: 60%;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 800px;
-  background-color: lightgray;
+.socials {
+}
+.socials > .icon {
 }
 
-footer > div {
-}
-footer > p {
+.copyright {
   margin: 0;
 }
